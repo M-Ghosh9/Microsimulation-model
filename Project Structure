@@ -1,0 +1,34 @@
+microsimulation-model/
+├── CMakeLists.txt            # Build configuration
+├── README.md                 # Project documentation
+├── LICENSE                   # Open source license (optional)
+├── docs/
+│   ├── architecture.png      # Architecture diagram
+│   ├── class_diagram.png     # Class diagram
+│   └── usage_guide.md        # Detailed usage guide
+├── src/
+│   ├── main.cpp
+│   ├── Patient.cpp
+│   ├── Hospital.cpp
+│   ├── Policy.cpp
+│   ├── Treatment.cpp
+│   ├── Simulation.cpp
+│   ├── ReportGenerator.cpp
+│   └── Multithreading.cpp
+├── include/
+│   ├── Patient.h
+│   ├── Hospital.h
+│   ├── Policy.h
+│   ├── Treatment.h
+│   ├── Simulation.h
+│   ├── ReportGenerator.h
+│   └── Multithreading.h
+├── tests/
+│   ├── test_patient.cpp
+│   ├── test_simulation.cpp
+│   └── CMakeLists.txt
+├── data/
+│   └── patients_data.csv     # Sample patient data
+└── scripts/
+    ├── run_simulation.sh     # Shell script to run the simulation
+    └── generate_report.sh    # Shell script to generate reports
