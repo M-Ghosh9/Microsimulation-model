@@ -1,0 +1,22 @@
+// main.cpp
+#include "Patient.h"
+#include "Policy.h"
+#include "Simulation.h"
+#include <iostream>
+
+int main() {
+    // Initialize patients
+    auto patient1 = std::make_shared<Patient>(1, "John Doe", 30);
+    auto patient2 = std::make_shared<Patient>(2, "Jane Smith", 45);
+    std::vector<std::shared_ptr<Patient>> patients = {patient1, patient2};
+
+    // Define a policy
+    auto policy = std::make_shared<StandardPolicy>();
+
+    // Run simulation
+    Simulation simulation(patients, policy);
+    simulation.run();
+    simulation.generateReport();
+
+    return 0;
+}
