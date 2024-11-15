@@ -1,0 +1,16 @@
+@startuml
+title Microsimulation Architecture
+
+component "Patient" as Patient
+component "Hospital" as Hospital
+component "Policy" as Policy
+component "Treatment" as Treatment
+component "Simulation Engine" as Simulation
+
+Patient --|> Treatment
+Hospital o--> Patient
+Policy --> Simulation
+Simulation *--> Patient
+Simulation *--> Policy
+
+@enduml
