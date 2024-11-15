@@ -11,7 +11,7 @@ This project is a **C++ application** that simulates the impact of healthcare po
 - **Modular Design**: Easily extendable and maintainable code structure.
 
 ## 📂 Project Structure
-
+```plaintext
 microsimulation-model/
 ├── CMakeLists.txt
 ├── README.md
@@ -47,34 +47,43 @@ microsimulation-model/
 └── images/
     ├── architecture.png
     └── class_diagram.png
-
+``` 
 
 ## 🚀 Getting Started
 📦 Prerequisites
+```plaintext
 CMake (version 3.16+)
 C++ Compiler (GCC, Clang, or MSVC)
 Google Test (for unit testing)
+```
 
 ## ⚙️ Installation
 Clone the repository and build the project using CMake:
-
+```plaintext
 git clone https://github.com/M-Ghosh9/Microsimulation-model.git
 cd Microsimulation-model
 mkdir build
 cd build
 cmake ..
 make
+```
 
 ## 🏃‍♂️ Running the Simulation
 To run the simulation:
+```plaintext
 ./microsimulation
+```
 
 ## ✅ Running Tests
 To run unit tests:
+```plaintext
 ./tests/tests
+```
 
 ## 📊 Generating Reports
 Use the provided script to generate reports:
+```plaintext
 ./scripts/generate_report.sh
+```
 
 
