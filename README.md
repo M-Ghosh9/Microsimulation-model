@@ -10,7 +10,8 @@ This project is a **C++ application** that simulates the impact of healthcare po
 - **Simulation Reports**: Generates detailed reports on policy impacts.
 - **Modular Design**: Easily extendable and maintainable code structure.
 
-![Screenshot (394)](https://github.com/user-attachments/assets/cc686f3b-e76c-445d-8f22-b7a10fdf4e94)
+![image](https://github.com/user-attachments/assets/4a664074-ad57-4218-946c-52c638709db9)
+
 
 
 ## 📂 Project Structure
