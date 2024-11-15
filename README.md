@@ -12,7 +12,6 @@ This project is a **C++ application** that simulates the impact of healthcare po
 
 ## 📂 Project Structure
 
-```plaintext
 microsimulation-model/
 ├── CMakeLists.txt
 ├── README.md
@@ -49,13 +48,16 @@ microsimulation-model/
     ├── architecture.png
     └── class_diagram.png
 
-🚀 Getting Started
+
+## 🚀 Getting Started
 📦 Prerequisites
 CMake (version 3.16+)
 C++ Compiler (GCC, Clang, or MSVC)
 Google Test (for unit testing)
-⚙️ Installation
+
+## ⚙️ Installation
 Clone the repository and build the project using CMake:
+
 git clone https://github.com/M-Ghosh9/Microsimulation-model.git
 cd Microsimulation-model
 mkdir build
@@ -63,15 +65,15 @@ cd build
 cmake ..
 make
 
-🏃‍♂️ Running the Simulation
+## 🏃‍♂️ Running the Simulation
 To run the simulation:
 ./microsimulation
 
-✅ Running Tests
+## ✅ Running Tests
 To run unit tests:
 ./tests/tests
 
-📊 Generating Reports
+## 📊 Generating Reports
 Use the provided script to generate reports:
 ./scripts/generate_report.sh
 
