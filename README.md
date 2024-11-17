@@ -2,13 +2,14 @@
 A C++ application that simulates healthcare policy impacts on patient outcomes. 
 
 ## 📚 Project Overview
-This project is a **C++ application** that simulates the impact of healthcare policies on patient outcomes. The simulation leverages **modern C++20/23 features** such as concepts, ranges, smart pointers, and multithreading to model the effects of different healthcare policies on patient health metrics.
+This project is a C++ application that simulates the impact of various healthcare policies on patient outcomes. It leverages modern C++20/23 features such as Concepts, Ranges, Smart Pointers, and Multithreading to model the effects of healthcare interventions on patient health metrics.
 
-### 🛠️ Features
-- **Multithreading**: Parallel processing for scalability.
-- **Modern C++**: Utilizes Concepts, Ranges, and Smart Pointers.
-- **Simulation Reports**: Generates detailed reports on policy impacts.
-- **Modular Design**: Easily extendable and maintainable code structure.
+## 🛠️ Features
+# Multithreading & Vectorization: Parallel processing for scalability and faster simulations.
+# Modern C++: Utilizes Concepts, Ranges, and Smart Pointers for cleaner and efficient code.
+# Predictive Modeling: Includes a health predictor to assess disease risks based on patient attributes.
+# Simulation Reports: Generates detailed reports on the impact of healthcare policies.
+# Modular Design: Easily extendable and maintainable code structure for future enhancements.
 
 ## Architecture Diagram
 ![image](https://github.com/user-attachments/assets/6e8d1dc1-f366-4e27-96da-1c25c9d9d153)
@@ -33,6 +34,9 @@ microsimulation-model/
 ├── docs/
 │   ├── architecture.png      # Architecture diagram
 │   ├── class_diagram.png     # Class diagram
+│   ├── sequence_diagram.png  # Sequence diagram
+│   ├── use_case_diagram.png  # Use Case diagram
+│   ├── output_diagram.png    # Output structure diagram
 │   └── usage_guide.md        # Detailed usage guide
 ├── include/
 │   ├── Patient.h
@@ -40,6 +44,7 @@ microsimulation-model/
 │   ├── Policy.h
 │   ├── Treatment.h
 │   ├── Simulation.h
+│   ├── HealthPredictor.h
 │   └── ReportGenerator.h
 ├── src/
 │   ├── main.cpp
@@ -48,6 +53,7 @@ microsimulation-model/
 │   ├── Policy.cpp
 │   ├── Treatment.cpp
 │   ├── Simulation.cpp
+│   ├── HealthPredictor.cpp
 │   └── ReportGenerator.cpp
 ├── tests/
 │   ├── test_patient.cpp
@@ -60,7 +66,10 @@ microsimulation-model/
 │   └── generate_report.sh
 └── images/
     ├── architecture.png
-    └── class_diagram.png
+    ├── class_diagram.png
+    ├── sequence_diagram.png
+    ├── use_case_diagram.png
+    └── output_diagram.png
 ``` 
 
 ## 🚀 Getting Started
@@ -121,6 +130,13 @@ Predicted Risk: 35.00%
 
 Total Patients Simulated: 1000
 ```
+
+## 📂 Detailed Explanation of the Diagrams
+1. Architecture Diagram: Shows the overall system architecture, including the components like the Population Initialization, Simulation Engine, and Predictive Model.
+2. Class Diagram: Illustrates the relationships between classes such as Patient, Policy, Simulation, and HealthPredictor.
+3. Sequence Diagram: Visualizes the flow of the simulation process, from population initialization to generating the final report.
+4. Use Case Diagram: Highlights the different user interactions, including running simulations and analyzing reports.
+5. Output Diagram: Depicts the structure of the simulation output, showcasing patient details, predicted health risks, and overall simulation summary.
 
 
 
