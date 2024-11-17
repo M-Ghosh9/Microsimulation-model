@@ -1,19 +1,21 @@
 @startuml
-title Microsimulation Class Diagram
+title Microsimulation Model Class Diagram
 
 class Patient {
     - id: int
     - name: string
     - age: int
+    - gender: string
+    - ethnicity: string
+    - riskFactors: vector<string>
     - healthScore: double
     + applyTreatment(Treatment)
     + getHealthScore(): double
+    + display(): void
 }
 
-class Hospital {
-    - name: string
-    - location: string
-    + admitPatient(Patient)
+class Policy {
+    + apply(Patient): void
 }
 
 class Treatment {
@@ -22,29 +24,24 @@ class Treatment {
     + getEfficacy(): double
 }
 
-class Policy {
-    + apply(Patient)
-}
-
-class StandardPolicy {
-    + apply(Patient)
-}
-
-class AggressivePolicy {
-    + apply(Patient)
+class HealthPredictor {
+    + predictHealthRisk(Patient): double
 }
 
 class Simulation {
-    - patients: vector<Patient>
+    - patients: vector<shared_ptr<Patient>>
     - policy: shared_ptr<Policy>
+    + generatePopulation(int)
     + run()
-    + generateReport()
+    + generateReport(): void
 }
 
 Policy <|-- StandardPolicy
 Policy <|-- AggressivePolicy
-Patient --> Treatment
 Simulation o-- Patient
 Simulation o-- Policy
+Simulation o-- HealthPredictor
+Patient --> Treatment
+Patient --> HealthPredictor
 
 @enduml
