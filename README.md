@@ -95,9 +95,23 @@ Use the provided script to generate reports:
 ## Output
 ```plaintext
 Simulation Report:
-ID: 1, Age: 42, Health Score: 90.34
-ID: 2, Age: 53, Health Score: 88.12
+
+ID: 1, Age: 67, Gender: Male, Ethnicity: Asian, Health Score: 75.89, Risk Factors: Diabetes Obesity
+Predicted Risk: 35.00%
+
+ID: 2, Age: 42, Gender: Female, Ethnicity: White, Health Score: 88.30, Risk Factors: Hypertension
+Predicted Risk: 10.00%
+
+ID: 3, Age: 59, Gender: Male, Ethnicity: Black, Health Score: 60.45, Risk Factors: Smoking 
+Predicted Risk: 30.00%
+
+ID: 4, Age: 25, Gender: Female, Ethnicity: Hispanic, Health Score: 95.20, Risk Factors: 
+Predicted Risk: 0.00%
+
+ID: 5, Age: 35, Gender: Male, Ethnicity: White, Health Score: 80.10, Risk Factors: Hypertension Smoking 
+Predicted Risk: 35.00%
 ...
+
 Total Patients Simulated: 1000
 ```
 
