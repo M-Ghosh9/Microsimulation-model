@@ -11,10 +11,11 @@ This project is a **C++ application** that simulates the impact of healthcare po
 - **Modular Design**: Easily extendable and maintainable code structure.
 
 ## Architecture Diagram
-![image](https://github.com/user-attachments/assets/4a664074-ad57-4218-946c-52c638709db9)
+![image](https://github.com/user-attachments/assets/6e8d1dc1-f366-4e27-96da-1c25c9d9d153)
+
 
 ## Class Diagram
-![image](https://github.com/user-attachments/assets/2d7cbbd5-033e-4093-8cea-4541dd5cb3ac)
+![image](https://github.com/user-attachments/assets/68671b42-5e00-46af-a3b5-3e5ad76655d3)
 
 
 ## 📂 Project Structure
