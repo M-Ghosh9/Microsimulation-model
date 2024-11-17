@@ -5,18 +5,21 @@
 #include <memory>
 
 int main() {
-    auto policy = std::make_shared<StandardPolicy>();
-    Simulation simulation(policy);
+    auto preventivePolicy = std::make_shared<PreventiveCarePolicy>();
+    auto aggressivePolicy = std::make_shared<AggressivePolicy>();
 
-    // Generate a population of 1000 patients
+    Simulation simulation(preventivePolicy);
     simulation.generatePopulation(1000);
-
-    // Run the simulation
     simulation.run();
-
-    // Generate the report
     simulation.generateReport();
+
+    // Optionally, run with a different policy
+    Simulation simulation2(aggressivePolicy);
+    simulation2.generatePopulation(1000);
+    simulation2.run();
+    simulation2.generateReport();
 
     return 0;
 }
+
 
