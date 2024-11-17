@@ -92,5 +92,16 @@ Use the provided script to generate reports:
 ```plaintext
 ./scripts/generate_report.sh
 ```
+## Output
+```plaintext
+Simulation Report:
+ID: 1, Age: 42, Health Score: 90.34
+ID: 2, Age: 53, Health Score: 88.12
+...
+Total Patients Simulated: 1000
+```
+
+
+
 
 
