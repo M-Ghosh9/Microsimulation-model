@@ -1,0 +1,17 @@
+@startuml
+title Microsimulation Use Case Diagram
+
+actor Admin
+actor User
+
+rectangle System {
+    usecase "Run Simulation" as UC1
+    usecase "Generate Report" as UC2
+    usecase "Analyze Health Data" as UC3
+}
+
+User -> UC1
+User -> UC2
+Admin -> UC3
+
+@enduml
