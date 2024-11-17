@@ -19,3 +19,4 @@ double HealthPredictor::predictHealthRisk(const Patient& patient) {
     // Normalize risk to be within 0-100
     return std::min(100.0, riskScore);
 }
+ 
