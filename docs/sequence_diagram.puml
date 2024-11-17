@@ -1,0 +1,20 @@
+@startuml
+title Simulation Flow Sequence Diagram
+
+actor User
+participant "Main Application" as MainApp
+participant "Simulation Engine" as Simulation
+participant "Patient" as Patient
+participant "Health Predictor" as Predictor
+participant "Policy" as Policy
+
+User -> MainApp: Start Simulation
+MainApp -> Simulation: generatePopulation(1000)
+Simulation -> Patient: Create Patients
+Simulation -> Policy: Apply Policy
+Simulation -> Predictor: predictHealthRisk(Patient)
+Simulation -> Patient: Update Health Score
+Simulation -> MainApp: Generate Report
+MainApp -> User: Display Report
+
+@enduml
