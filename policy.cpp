@@ -1,10 +1,19 @@
 // src/Policy.cpp
+
 #include "Policy.h"
+#include <iostream>
 
-void StandardPolicy::apply(Patient& patient) {
-    patient.setHealthScore(patient.getHealthScore() - 10); // Moderate effect
+// Preventive care reduces risk factors
+void PreventiveCarePolicy::apply(Patient& patient) const {
+    if (patient.getRiskFactors().size() > 0) {
+        patient.setHealthScore(patient.getHealthScore() + 10); // Boost health for preventive measures
+        std::cout << "Preventive care applied.\n";
+    }
 }
 
-void AggressivePolicy::apply(Patient& patient) {
-    patient.setHealthScore(patient.getHealthScore() - 20); // Stronger effect
+// Aggressive policy for severe cases
+void AggressivePolicy::apply(Patient& patient) const {
+    patient.setHealthScore(patient.getHealthScore() - 20); // More intensive treatment with side effects
+    std::cout << "Aggressive treatment applied.\n";
 }
+
