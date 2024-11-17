@@ -17,6 +17,12 @@ This project is a **C++ application** that simulates the impact of healthcare po
 ## Class Diagram
 ![image](https://github.com/user-attachments/assets/68671b42-5e00-46af-a3b5-3e5ad76655d3)
 
+## Sequence Diagram
+![image](https://github.com/user-attachments/assets/5686a298-7268-4d9a-9c42-f44f3fd6baa8)
+
+## Use Case Diagram
+![image](https://github.com/user-attachments/assets/ea2a3252-a1de-4e03-809f-58668a20fc1f)
+
 
 ## 📂 Project Structure
 ```plaintext
