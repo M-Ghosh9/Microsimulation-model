@@ -1,16 +1,18 @@
 @startuml
-title Microsimulation Architecture
+title Microsimulation Model Architecture
 
-component "Patient" as Patient
-component "Hospital" as Hospital
-component "Policy" as Policy
-component "Treatment" as Treatment
+component "Main Application" as MainApp
 component "Simulation Engine" as Simulation
+component "Patient Data" as Patient
+component "Policies" as Policy
+component "Treatments" as Treatment
+component "Health Predictor" as Predictor
 
-Patient --|> Treatment
-Hospital o--> Patient
-Policy --> Simulation
-Simulation *--> Patient
-Simulation *--> Policy
+MainApp --> Simulation
+Simulation o--> Patient
+Simulation --> Policy
+Simulation --> Predictor
+Patient --> Treatment
+Patient --> Predictor
 
 @enduml
