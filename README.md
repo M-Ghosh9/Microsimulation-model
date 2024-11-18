@@ -129,6 +129,7 @@ Predicted Risk: 35.00%
 ...
 
 Total Patients Simulated: 1000
+Simulation took 0.45 seconds to run.
 ```
 
 ## 📂 Detailed Explanation of the Diagrams
