@@ -25,6 +25,8 @@ public:
     const std::string& getGender() const;
     const std::string& getEthnicity() const;
     const std::vector<std::string>& getRiskFactors() const;
+    int getId() const;
+    int getAge() const;
 
 private:
     int id_;
