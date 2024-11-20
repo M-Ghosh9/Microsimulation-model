@@ -34,6 +34,10 @@ void Patient::applyTreatment(const Treatment& treatment) {
 
 double Patient::getHealthScore() const { return healthScore_; }
 
+void Patient::setHealthScore(double score) {
+    healthScore_ = score;
+}
+
 void Patient::display() const {
     std::cout << "ID: " << id_ 
               << ", Age: " << age_ 
