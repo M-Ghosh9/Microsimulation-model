@@ -1,5 +1,5 @@
 // src/Policy.cpp
-#include "Patient.h"
+#include "Patient.h" // for Patient for setHealthScore() 
 #include "Policy.h"
 #include <iostream>
 
@@ -16,4 +16,3 @@ void AggressivePolicy::apply(Patient& patient) const {
     patient.setHealthScore(patient.getHealthScore() - 20); // More intensive treatment with side effects
     std::cout << "Aggressive treatment applied.\n";
 }
-
