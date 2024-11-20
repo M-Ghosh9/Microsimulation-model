@@ -1,4 +1,5 @@
 // include/Patient.h
+// Patient.h
 #ifndef PATIENT_H
 #define PATIENT_H
 
@@ -14,16 +15,14 @@ public:
     Patient(int id);
     Patient(int id, const std::string& name, int age, const std::string& gender,
             const std::string& ethnicity, const std::vector<std::string>& riskFactors);
-    
-    void setHealthScore(int score) { healthScore = score; }
 
     // Methods
     void applyTreatment(const Treatment& treatment);
-    double getHealthScore() const;
-    void display() const;
+    double getHealthScore() const; // Only one definition
     void setHealthScore(double score);
+    void display() const;
 
-    // Getters for new attributes
+    // Getters for attributes
     const std::string& getGender() const;
     const std::string& getEthnicity() const;
     const std::vector<std::string>& getRiskFactors() const;
@@ -37,8 +36,7 @@ private:
     std::string gender_;
     std::string ethnicity_;
     std::vector<std::string> riskFactors_;
-    double healthScore_;
-    int healthScore;
+    double healthScore_; // Double type for consistency
 };
 
 #endif // PATIENT_H
