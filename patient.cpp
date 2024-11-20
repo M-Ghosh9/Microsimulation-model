@@ -10,7 +10,7 @@ std::mt19937 gen(rd());
 std::uniform_int_distribution<> age_dist(20, 80);
 std::uniform_real_distribution<> health_dist(50.0, 100.0);
 std::vector<std::string> genders = {"Male", "Female"};
-std::vector<std::string> ethnicities = {"Asian", "Black", "White", "Hispanic"};
+std::vector<std::string> ethnicities = {"Asian", "Black", "White", "Hispanic", "Mixed"};
 std::vector<std::string> risk_factors = {"Diabetes", "Hypertension", "Obesity", "Smoking"};
 
 // Constructors
@@ -32,8 +32,12 @@ void Patient::applyTreatment(const Treatment& treatment) {
     if (healthScore_ < 0) healthScore_ = 0; // Ensure health score is non-negative
 }
 
-double Patient::getHealthScore() const { return healthScore_; }
+//getHealthScore()
+double Patient::getHealthScore() const { 
+    return healthScore_; 
+}
 
+//setHealthScore()
 void Patient::setHealthScore(double score) {
     healthScore_ = score;
 }
