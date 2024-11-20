@@ -1,4 +1,5 @@
 #include "ReportGenerator.h"
+#include "Patient.h"
 #include <fstream>
 #include <iomanip>
 
