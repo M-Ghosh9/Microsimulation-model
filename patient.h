@@ -19,6 +19,7 @@ public:
     void applyTreatment(const Treatment& treatment);
     double getHealthScore() const;
     void display() const;
+    void setHealthScore(double score);
 
     // Getters for new attributes
     const std::string& getGender() const;
