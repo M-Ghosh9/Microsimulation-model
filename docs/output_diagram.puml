@@ -1,0 +1,35 @@
+@startuml
+title Microsimulation Output and Decision-Making
+
+actor "User" as U
+
+rectangle "Microsimulation Model" {
+    
+    U -> "Run Simulation" : Starts Simulation
+    
+    rectangle "Generated Files" {
+        file "simulation_report.txt" {
+            - Detailed patient-level data
+        }
+        file "patients_data.csv" {
+            - Raw patient data in CSV format
+        }
+        file "population_metrics.txt" {
+            - Population-level statistics
+        }
+    }
+
+    rectangle "Visualization and Insights" {
+        file "simulation_report.txt" --> "Individual Risk Analysis" : Patient-level insights
+        file "patients_data.csv" --> "Risk Factors Prevalence" : Prevalence analysis
+        file "population_metrics.txt" --> "Policy Impact Trends" : Compare policies
+
+        "Visualization and Insights" --> "Decisions" {
+            - Allocate resources
+            - Prioritize risk factors
+            - Choose policies
+        }
+    }
+}
+
+@enduml
