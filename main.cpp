@@ -1,23 +1,24 @@
 // src/main.cpp
-#include "Patient.h"
-#include "Policy.h"
 #include "Simulation.h"
+#include "Policy.h"
+#include <iostream>
 #include <memory>
 
 int main() {
-    auto preventivePolicy = std::make_shared<PreventiveCarePolicy>();
-    auto aggressivePolicy = std::make_shared<AggressivePolicy>();
+    auto policy = std::make_shared<PreventiveCarePolicy>();
+    Simulation simulation(policy);
 
-    Simulation simulation(preventivePolicy);
-    simulation.generatePopulation(1000);
+    // Generate a large synthetic population (e.g., 100,000)
+    simulation.generatePopulation(100000);
     simulation.run();
+
+    // Generate reports
     simulation.generateReport();
 
-    // Optionally, run with a different policy
-    Simulation simulation2(aggressivePolicy);
-    simulation2.generatePopulation(1000);
-    simulation2.run();
-    simulation2.generateReport();
+    std::cout << "Simulation completed. Reports generated:\n"
+              << "- simulation_report.txt\n"
+              << "- patients_data.csv\n"
+              << "- population_metrics.txt\n";
 
     return 0;
 }
