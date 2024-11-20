@@ -14,6 +14,9 @@ public:
     Patient(int id);
     Patient(int id, const std::string& name, int age, const std::string& gender,
             const std::string& ethnicity, const std::vector<std::string>& riskFactors);
+    
+    int getHealthScore() const { return healthScore; }
+    void setHealthScore(int score) { healthScore = score; }
 
     // Methods
     void applyTreatment(const Treatment& treatment);
@@ -36,6 +39,7 @@ private:
     std::string ethnicity_;
     std::vector<std::string> riskFactors_;
     double healthScore_;
+    int healthScore;
 };
 
 #endif // PATIENT_H
