@@ -52,3 +52,18 @@ void ReportGenerator::saveSyntheticPopulation(const std::vector<std::shared_ptr<
 
     csvFile.close();
 }
+
+void ReportGenerator::generatePopulationMetricsReport(const std::map<std::string, double>& metrics, const std::string& filename) {
+    std::ofstream metricsFile(filename);
+
+    if (!metricsFile.is_open()) {
+        throw std::runtime_error("Unable to open file: " + filename);
+    }
+
+    metricsFile << "Population Metrics Report:\n\n";
+    for (const auto& [metric, value] : metrics) {
+        metricsFile << metric << ": " << std::fixed << std::setprecision(2) << value << "%\n";
+    }
+
+    metricsFile.close();
+}
