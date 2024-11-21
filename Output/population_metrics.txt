@@ -1,0 +1,6 @@
+Population Metrics Report:
+
+Average Health Score: 81.70%
+Proportion At Risk: 66.67%
+Proportion with Diabetes: 24.88%
+Proportion with Hypertension: 25.03%
