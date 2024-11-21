@@ -2,7 +2,7 @@
 A C++ application that simulates healthcare policy impacts on patient outcomes. 
 
 ## 📚 Project Overview
-This project is a C++ application that simulates the impact of various healthcare policies on patient outcomes. It leverages modern C++20/23 features such as Concepts, Ranges, Smart Pointers, and Multithreading to model the effects of healthcare interventions on patient health metrics.
+This project is a C++ application that simulates the impact of various healthcare policies on patient outcomes. It leverages modern C++20/23 features such as Concepts, Ranges, Smart Pointers, and Multithreading to model the effects of healthcare interventions on patient health metrics. The project is run on Windows 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz   2.42 GHz, and NVDIA GeForce MX330 GPU. 
 
 ## 🛠️ Features
 1. Multithreading & Vectorization: Parallel processing for scalability and faster simulations.
