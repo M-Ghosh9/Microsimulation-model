@@ -24,6 +24,7 @@ This project is a C++ application that simulates the impact of various healthcar
 ## Use Case Diagram
 ![image](https://github.com/user-attachments/assets/ea2a3252-a1de-4e03-809f-58668a20fc1f)
 
+
 ## Output
 ```plaintext
 Simulation Report:
