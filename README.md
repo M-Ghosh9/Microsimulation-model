@@ -45,8 +45,8 @@ ID: 5, Age: 35, Gender: Male, Ethnicity: White, Health Score: 80.10, Risk Factor
 Predicted Risk: 35.00%
 ...
 
-Total Patients Simulated: 1000
-Simulation took 0.45 seconds to run.
+Total Patients Simulated: 100,000
+Simulation took 1.45 seconds to run.
 ```
 
 ## 📂 Project Structure
