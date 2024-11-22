@@ -48,6 +48,28 @@ Predicted Risk: 35.00%
 Total Patients Simulated: 100,000
 Simulation took 1.45 seconds to run.
 ```
+## Classification Report
+```plaintext
+precision    recall  f1-score   support
+
+    diabetes       0.25      0.22      0.23      4579
+hypertension       0.26      0.22      0.24      4571
+     obesity       0.26      0.22      0.24      4725
+     smoking       0.25      0.22      0.23      4500
+
+   micro avg       0.25      0.22      0.24     18375
+   macro avg       0.25      0.22      0.24     18375
+weighted avg       0.25      0.22      0.24     18375
+ samples avg       0.15      0.15      0.14     18375
+
+Risk factor distribution:
+diabetes        22786
+hypertension    22907
+obesity         23120
+smoking         23085
+dtype: int64
+Dash is running on http://127.0.0.1:8050/
+```
 
 ## 📂 Project Structure
 ```plaintext
