@@ -24,30 +24,6 @@ This project is a C++ application that simulates the impact of various healthcar
 ## Use Case Diagram
 ![image](https://github.com/user-attachments/assets/ea2a3252-a1de-4e03-809f-58668a20fc1f)
 
-
-## Output
-```plaintext
-Simulation Report:
-
-ID: 1, Age: 67, Gender: Male, Ethnicity: Asian, Health Score: 75.89, Risk Factors: Diabetes Obesity
-Predicted Risk: 35.00%
-
-ID: 2, Age: 42, Gender: Female, Ethnicity: White, Health Score: 88.30, Risk Factors: Hypertension
-Predicted Risk: 10.00%
-
-ID: 3, Age: 59, Gender: Male, Ethnicity: Black, Health Score: 60.45, Risk Factors: Smoking 
-Predicted Risk: 30.00%
-
-ID: 4, Age: 25, Gender: Female, Ethnicity: Hispanic, Health Score: 95.20, Risk Factors: 
-Predicted Risk: 0.00%
-
-ID: 5, Age: 35, Gender: Male, Ethnicity: White, Health Score: 80.10, Risk Factors: Hypertension Smoking 
-Predicted Risk: 35.00%
-...
-
-Total Patients Simulated: 100,000
-Simulation took 1.45 seconds to run.
-```
 ## Classification Report
 ```plaintext
 Classification Report:
@@ -75,9 +51,13 @@ hypertension    22907
 obesity         23120
 smoking         23085
 dtype: int64
-
-Dash is running on http://127.0.0.1:8050/
 ```
+## Dashboard
+Dash is running on 
+``` plaintext
+http://127.0.0.1:8050/
+```
+
 ## Visualization
 1. Age Distribution across the population
    ![age distribution](https://github.com/user-attachments/assets/a1e91eb9-5f47-43d8-a076-275ea7a38dc2)
@@ -127,6 +107,12 @@ microsimulation-model/
 │   ├── Simulation.cpp
 │   ├── HealthPredictor.cpp
 │   └── ReportGenerator.cpp
+├── python for visualization/
+│   ├── main.py
+│   ├── data_loading.py
+│   ├── analysis.py
+│   ├── predictive_model.py
+│   ├── dashboard.py
 ├── tests/
 │   ├── test_patient.cpp
 │   ├── test_simulation.cpp
@@ -166,7 +152,7 @@ make
 ## 🏃‍♂️ Running the Simulation
 To run the simulation:
 ```plaintext
-./microsimulation
+./microsimulation.exe
 ```
 
 ## ✅ Running Tests
