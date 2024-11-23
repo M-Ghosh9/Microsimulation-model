@@ -52,7 +52,7 @@ obesity         23120
 smoking         23085
 dtype: int64
 ```
-## Dashboard
+## 📊 Dashboard for Users
 Dash is running on 
 ``` plaintext
 http://127.0.0.1:8050/
