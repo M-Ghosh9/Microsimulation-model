@@ -57,11 +57,13 @@ Classification Report:
 hypertension       0.26      0.22      0.24      4571
      obesity       0.26      0.22      0.24      4725
      smoking       0.25      0.22      0.23      4500
+![classification](https://github.com/user-attachments/assets/7c03906b-6518-440d-a5c4-2d3ae7b0c7cd)
 
    micro avg       0.25      0.22      0.24     18375
    macro avg       0.25      0.22      0.24     18375
 weighted avg       0.25      0.22      0.24     18375
  samples avg       0.15      0.15      0.14     18375
+![risk factors](https://github.com/user-attachments/assets/692410e2-0466-4f8f-be7f-f74e563b1170)
 
 Samples with no true labels: 6669
 Risk factor distribution:
