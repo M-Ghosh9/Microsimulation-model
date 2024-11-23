@@ -73,6 +73,24 @@ dtype: int64
 
 Dash is running on http://127.0.0.1:8050/
 ```
+## Visualization
+1. Age Distribution across the population
+   ![age distribution](https://github.com/user-attachments/assets/a1e91eb9-5f47-43d8-a076-275ea7a38dc2)
+2. Health Score Distribution across the population
+   ![healthscore distribution](https://github.com/user-attachments/assets/80c31a93-bc04-49fc-8369-203264c26957)
+3. Prevalence of Diabetes across Age Group and Gender
+   ![diabetes by age grp and gender](https://github.com/user-attachments/assets/6117af8d-07c3-4dbe-888e-c7823b489d01)
+4. Prevalence of Hypertension across Age Group and Gender
+   ![hypertension by age grp and gender](https://github.com/user-attachments/assets/6c7fce30-1181-43e2-8c97-2b3ff78c4cba)
+5. Prevalence of Obesity across Age Group and Gender
+   ![obesity by age grp and gender](https://github.com/user-attachments/assets/f1e39023-43a8-4e3e-b98a-43ec2c65ad45)
+7. Prevalence of Smoking across Age Group and Gender
+   ![smoking by age grp and gender](https://github.com/user-attachments/assets/0bfa9963-6fd2-422b-8c1e-68552ff944d6)
+8. Gender Distribution
+   ![newplot](https://github.com/user-attachments/assets/deef1cf9-0d45-4046-a90a-a7e2307bdc60)
+10. Proportion at Risk
+    ![newplot (1)](https://github.com/user-attachments/assets/caab1226-4c6a-411a-b872-e268351fee3b)
+
 
 ## 📂 Project Structure
 ```plaintext
