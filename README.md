@@ -2,7 +2,7 @@
 A C++ application that simulates healthcare policy impacts on patient outcomes. 
 
 ## 📚 Project Overview
-This project is a C++ application that simulates the impact of various healthcare policies on patient outcomes. It leverages modern C++20/23 features such as Concepts, Ranges, Smart Pointers, and Multithreading to model the effects of healthcare interventions on patient health metrics. The project is run on Windows 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz   2.42 GHz, and NVDIA GeForce MX330 GPU. 
+This project is a C++ application that simulates the impact of various healthcare policies on patient outcomes. It leverages C++20/23 features such as Concepts, Ranges, Smart Pointers, Vectorization and Multithreading to model the effects of healthcare interventions on patient health metrics. The project is run on Windows 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz 2.42 GHz, and NVDIA GeForce MX330 GPU. 
 
 ## 🛠️ Features
 1. Multithreading & Vectorization: Parallel processing for scalability and faster simulations.
@@ -92,9 +92,9 @@ Dash is running on http://127.0.0.1:8050/
 7. Prevalence of Smoking across Age Group and Gender
    ![smoking by age grp and gender](https://github.com/user-attachments/assets/0bfa9963-6fd2-422b-8c1e-68552ff944d6)
 8. Gender Distribution
-   ![newplot](https://github.com/user-attachments/assets/deef1cf9-0d45-4046-a90a-a7e2307bdc60)
+![newplot](https://github.com/user-attachments/assets/deef1cf9-0d45-4046-a90a-a7e2307bdc60)
 10. Proportion at Risk
-    ![newplot (1)](https://github.com/user-attachments/assets/caab1226-4c6a-411a-b872-e268351fee3b)
+![newplot (1)](https://github.com/user-attachments/assets/caab1226-4c6a-411a-b872-e268351fee3b)
 
 
 ## 📂 Project Structure
