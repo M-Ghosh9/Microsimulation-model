@@ -1,15 +1,21 @@
 # Microsimulation-model for Healthcare Policy
-A C++ application that simulates healthcare policy impacts on patient outcomes. 
+A C++ and Python-based application simulating the impact of healthcare policies on patient outcomes. This project leverages modern C++ (C++20/23) features and Python for predictive modeling and data visualization, providing stakeholders with actionable insights. 
 
 ## 📚 Project Overview
-This project is a C++ application that simulates the impact of various healthcare policies on patient outcomes. It leverages C++20/23 features such as Concepts, Ranges, Smart Pointers, Vectorization and Multithreading to model the effects of healthcare interventions on patient health metrics. The project is run on Windows 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz 2.42 GHz, and NVDIA GeForce MX330 GPU. 
+The microsimulation model evaluates the impact of healthcare policies, considering patient attributes such as age, gender, and risk factors. It uses:
+1. Modern C++ features like multithreading, vectorization, and smart pointers for fast, scalable simulations.
+2. Predictive modeling and dashboards to support data-driven policy-making decisions.
+
+The model is designed for Windows 11 running on:
+1. CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz.
+2. GPU: NVIDIA GeForce MX330.
 
 ## 🛠️ Features
-1. Multithreading & Vectorization: Parallel processing for scalability and faster simulations.
-2. Modern C++: Utilizes Concepts, Ranges, and Smart Pointers for cleaner and efficient code.
-3. Predictive Modeling: Includes a health predictor to assess disease risks based on patient attributes.
-4. Simulation Reports: Generates detailed reports on the impact of healthcare policies.
-5. Modular Design: Easily extendable and maintainable code structure for future enhancements.
+1. Scalable Simulations: Supports parallel processing and vectorization for large-scale simulations.
+2. Predictive Modeling: Models health risks based on patient attributes using Python ML tools.
+3. Interactive Visualizations: Dashboards for exploring health metrics, risk factors, and policy outcomes.
+4. Detailed Reporting: Generates patient-level data, population summaries, and policy impact metrics.
+5. Modular Design: Extensible C++ and Python architecture for easy enhancements.
 
 ## Architecture Diagram
 ![image](https://github.com/user-attachments/assets/6e8d1dc1-f366-4e27-96da-1c25c9d9d153)
@@ -26,6 +32,8 @@ This project is a C++ application that simulates the impact of various healthcar
 
 ## Overall Synthetic Population Report: 
  ``` plaintext
+Total population size: 100,000
+
 Risk factor distribution:
 diabetes        22786
 hypertension    22907
@@ -33,7 +41,6 @@ obesity         23120
 smoking         23085
 
 Population Metrics Report:
-
 Average Health Score: 81.70%
 Proportion At Risk: 66.67%
 Proportion with Diabetes: 24.88%
@@ -61,20 +68,6 @@ Dash is running on
 http://127.0.0.1:8050/
 ``` 
 
-## Visualization
-
-1.  Health Score Distribution across the population
-   ![healthscore distribution](https://github.com/user-attachments/assets/80c31a93-bc04-49fc-8369-203264c26957)
-2. Prevalence of Diabetes across Age Group and Gender
-   ![diabetes by age grp and gender](https://github.com/user-attachments/assets/6117af8d-07c3-4dbe-888e-c7823b489d01)
-3. Prevalence of Hypertension across Age Group and Gender
-   ![hypertension by age grp and gender](https://github.com/user-attachments/assets/6c7fce30-1181-43e2-8c97-2b3ff78c4cba)
-4. Prevalence of Obesity across Age Group and Gender
-   ![obesity by age grp and gender](https://github.com/user-attachments/assets/f1e39023-43a8-4e3e-b98a-43ec2c65ad45)
-5. Prevalence of Smoking across Age Group and Gender
-   ![smoking by age grp and gender](https://github.com/user-attachments/assets/0bfa9963-6fd2-422b-8c1e-68552ff944d6)
-
-
 ## 📂 Project Structure
 ```plaintext
 microsimulation-model/
@@ -89,65 +82,51 @@ microsimulation-model/
 │   ├── output_diagram.png    # Output structure diagram
 │   └── usage_guide.md        # Detailed usage guide
 ├── include/
-│   ├── Patient.h
-│   ├── Hospital.h
-│   ├── Policy.h
-│   ├── Treatment.h
-│   ├── Simulation.h
-│   ├── HealthPredictor.h
-│   └── ReportGenerator.h
+│   ├── *.h                   # Header files for core classes
 ├── src/
-│   ├── main.cpp
-│   ├── Patient.cpp
-│   ├── Hospital.cpp
-│   ├── Policy.cpp
-│   ├── Treatment.cpp
-│   ├── Simulation.cpp
-│   ├── HealthPredictor.cpp
-│   └── ReportGenerator.cpp
+│   ├── *.cpp                 # Implementation of core classes
 ├── python for visualization/
-│   ├── main.py
-│   ├── data_loading.py
-│   ├── analysis.py
-│   ├── predictive_model.py
-│   ├── dashboard.py
+│   ├── *.py                  # Python scripts for analysis and dashboards
 ├── tests/
-│   ├── test_patient.cpp
-│   ├── test_simulation.cpp
+│   ├── *.cpp                 # Unit tests
 │   └── CMakeLists.txt
 ├── data/
-│   └── patients_data.csv
+│   └── patients_data.csv      # Synthetic patient data
 ├── scripts/
-│   ├── run_simulation.sh
-│   └── generate_report.sh
+│   ├── run_simulation.sh      # Script to run simulations
+│   └── generate_report.sh     # Script to generate reports
 └── images/
-    ├── architecture.png
-    ├── class_diagram.png
-    ├── sequence_diagram.png
-    ├── use_case_diagram.png
-    └── output_diagram.png
+    ├── *.png                  # Diagrams and visualizations
 ``` 
 
 ## 🚀 Getting Started
 📦 Prerequisites
 ```plaintext
+C++ Tools:
 CMake (version 3.16+)
-C++ Compiler (GCC, Clang, or MSVC)
-Google Test (for unit testing)
-Python (visualization and actionable insights)
+GCC, Clang, or MSVC compiler
+
+Python Tools:
+Python 3.8+
+Libraries: numpy, pandas, matplotlib, seaborn, scikit-learn, dash
 ```
 
 ## ⚙️ Installation
-Clone the repository and build the project using CMake:
+1. Clone the repository and build the project using CMake:
 ```plaintext
 git clone https://github.com/M-Ghosh9/Microsimulation-model.git
 cd Microsimulation-model
+```
+2. Build the C++ application
+```plaintext
 mkdir build
 cd build
 cmake ..
 make
-install python, numpy, scipy, matplotlib, pandas, PyTorch, dashboard
-python main.py
+```
+3. Install python dependencies
+```plaintext
+pip install -r requirements.txt
 ```
 
 ## 🏃‍♂️ Running the Simulation
@@ -167,6 +146,31 @@ Use the provided script to generate reports:
 ```plaintext
 ./scripts/generate_report.sh
 ```
+## Run the Dashboard
+``` plaintext
+cd python\ for\ visualization/
+python dashboard.py
+```
+Open the dashboard in your browser at 
+``` plaintext
+http://127.0.0.1:8050.
+```
+## Visualization
+
+1.  Health Score Distribution across the population
+   ![healthscore distribution](https://github.com/user-attachments/assets/80c31a93-bc04-49fc-8369-203264c26957)
+2. Prevalence of Diabetes across Age Group and Gender
+   ![diabetes by age grp and gender](https://github.com/user-attachments/assets/6117af8d-07c3-4dbe-888e-c7823b489d01)
+3. Prevalence of Hypertension across Age Group and Gender
+   ![hypertension by age grp and gender](https://github.com/user-attachments/assets/6c7fce30-1181-43e2-8c97-2b3ff78c4cba)
+4. Prevalence of Obesity across Age Group and Gender
+   ![obesity by age grp and gender](https://github.com/user-attachments/assets/f1e39023-43a8-4e3e-b98a-43ec2c65ad45)
+5. Prevalence of Smoking across Age Group and Gender
+   ![smoking by age grp and gender](https://github.com/user-attachments/assets/0bfa9963-6fd2-422b-8c1e-68552ff944d6)
+
+## Actions for Policymakers
+Focus on high-risk groups (health scores <60).
+Promote interventions targeting prevalent risk factors.
 
 
 
