@@ -51,6 +51,15 @@ Dash is running on
 ``` plaintext
 http://127.0.0.1:8050/
 ```
+## Overall Population metrics
+``` plaintext
+Population Metrics Report:
+
+Average Health Score: 81.70%
+Proportion At Risk: 66.67%
+Proportion with Diabetes: 24.88%
+Proportion with Hypertension: 25.03%
+```
 
 ## Visualization
 
