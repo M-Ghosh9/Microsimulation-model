@@ -36,13 +36,6 @@ hypertension       0.26      0.22      0.24      4571
 ```
 ![classification](https://github.com/user-attachments/assets/7c03906b-6518-440d-a5c4-2d3ae7b0c7cd)
 
-``` plaintext
-   micro avg       0.25      0.22      0.24     18375
-   macro avg       0.25      0.22      0.24     18375
-weighted avg       0.25      0.22      0.24     18375
- samples avg       0.15      0.15      0.14     18375
-``` 
-![risk factors](https://github.com/user-attachments/assets/692410e2-0466-4f8f-be7f-f74e563b1170)
  ``` plaintext
 Samples with no true labels: 6669
 Risk factor distribution:
@@ -50,8 +43,9 @@ diabetes        22786
 hypertension    22907
 obesity         23120
 smoking         23085
-dtype: int64
 ```
+![risk factors](https://github.com/user-attachments/assets/692410e2-0466-4f8f-be7f-f74e563b1170)
+ 
 ## 📊 Dashboard for Users
 Dash is running on 
 ``` plaintext
@@ -59,22 +53,17 @@ http://127.0.0.1:8050/
 ```
 
 ## Visualization
-1. Age Distribution across the population
-   ![age distribution](https://github.com/user-attachments/assets/a1e91eb9-5f47-43d8-a076-275ea7a38dc2)
-2. Health Score Distribution across the population
+
+1.  Health Score Distribution across the population
    ![healthscore distribution](https://github.com/user-attachments/assets/80c31a93-bc04-49fc-8369-203264c26957)
-3. Prevalence of Diabetes across Age Group and Gender
+2. Prevalence of Diabetes across Age Group and Gender
    ![diabetes by age grp and gender](https://github.com/user-attachments/assets/6117af8d-07c3-4dbe-888e-c7823b489d01)
-4. Prevalence of Hypertension across Age Group and Gender
+3. Prevalence of Hypertension across Age Group and Gender
    ![hypertension by age grp and gender](https://github.com/user-attachments/assets/6c7fce30-1181-43e2-8c97-2b3ff78c4cba)
-5. Prevalence of Obesity across Age Group and Gender
+4. Prevalence of Obesity across Age Group and Gender
    ![obesity by age grp and gender](https://github.com/user-attachments/assets/f1e39023-43a8-4e3e-b98a-43ec2c65ad45)
-7. Prevalence of Smoking across Age Group and Gender
+5. Prevalence of Smoking across Age Group and Gender
    ![smoking by age grp and gender](https://github.com/user-attachments/assets/0bfa9963-6fd2-422b-8c1e-68552ff944d6)
-8. Gender Distribution
-![newplot](https://github.com/user-attachments/assets/deef1cf9-0d45-4046-a90a-a7e2307bdc60)
-10. Proportion at Risk
-![newplot (1)](https://github.com/user-attachments/assets/caab1226-4c6a-411a-b872-e268351fee3b)
 
 
 ## 📂 Project Structure
@@ -147,6 +136,8 @@ mkdir build
 cd build
 cmake ..
 make
+install python, PyTorch, dashboard
+python main.py
 ```
 
 ## 🏃‍♂️ Running the Simulation
@@ -166,13 +157,6 @@ Use the provided script to generate reports:
 ```plaintext
 ./scripts/generate_report.sh
 ```
-
-## 📂 Detailed Explanation of the Diagrams
-1. Architecture Diagram: Shows the overall system architecture, including the components like the Population Initialization, Simulation Engine, and Predictive Model.
-2. Class Diagram: Illustrates the relationships between classes such as Patient, Policy, Simulation, and HealthPredictor.
-3. Sequence Diagram: Visualizes the flow of the simulation process, from population initialization to generating the final report.
-4. Use Case Diagram: Highlights the different user interactions, including running simulations and analyzing reports.
-5. Output Diagram: Depicts the structure of the simulation output, showcasing patient details, predicted health risks, and overall simulation summary.
 
 
 
