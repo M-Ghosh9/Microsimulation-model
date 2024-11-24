@@ -37,12 +37,20 @@ hypertension       0.26      0.22      0.24      4571
 ![classification](https://github.com/user-attachments/assets/7c03906b-6518-440d-a5c4-2d3ae7b0c7cd)
 
  ``` plaintext
-Samples with no true labels: 6669
 Risk factor distribution:
 diabetes        22786
 hypertension    22907
 obesity         23120
 smoking         23085
+
+Population Metrics Report:
+
+Average Health Score: 81.70%
+Proportion At Risk: 66.67%
+Proportion with Diabetes: 24.88%
+Proportion with Hypertension: 25.03%
+Proportion with Obesity: 23.12%
+Proportion with Smoking:  23.08%
 ```
 ![risk factors](https://github.com/user-attachments/assets/692410e2-0466-4f8f-be7f-f74e563b1170)
  
@@ -50,16 +58,7 @@ smoking         23085
 Dash is running on 
 ``` plaintext
 http://127.0.0.1:8050/
-```
-## Overall Population metrics
-``` plaintext
-Population Metrics Report:
-
-Average Health Score: 81.70%
-Proportion At Risk: 66.67%
-Proportion with Diabetes: 24.88%
-Proportion with Hypertension: 25.03%
-```
+``` 
 
 ## Visualization
 
