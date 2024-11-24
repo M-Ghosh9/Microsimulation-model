@@ -24,18 +24,7 @@ This project is a C++ application that simulates the impact of various healthcar
 ## Use Case Diagram
 ![image](https://github.com/user-attachments/assets/ea2a3252-a1de-4e03-809f-58668a20fc1f)
 
-## Classification Report
-```plaintext
-Classification Report:
-                 precision  recall   f1-score   support
-
-    diabetes       0.25      0.22      0.23      4579
-hypertension       0.26      0.22      0.24      4571
-     obesity       0.26      0.22      0.24      4725
-     smoking       0.25      0.22      0.23      4500
-```
-![classification](https://github.com/user-attachments/assets/7c03906b-6518-440d-a5c4-2d3ae7b0c7cd)
-
+## Overall Synthetic Population Report: 
  ``` plaintext
 Risk factor distribution:
 diabetes        22786
@@ -53,6 +42,18 @@ Proportion with Obesity: 23.12%
 Proportion with Smoking:  23.08%
 ```
 ![risk factors](https://github.com/user-attachments/assets/692410e2-0466-4f8f-be7f-f74e563b1170)
+
+```plaintext
+Classification Report:
+                 precision  recall   f1-score   support
+
+    diabetes       0.25      0.22      0.23      4579
+hypertension       0.26      0.22      0.24      4571
+     obesity       0.26      0.22      0.24      4725
+     smoking       0.25      0.22      0.23      4500
+```
+![classification](https://github.com/user-attachments/assets/7c03906b-6518-440d-a5c4-2d3ae7b0c7cd)
+
  
 ## 📊 Dashboard for Users
 Dash is running on 
