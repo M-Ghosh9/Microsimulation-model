@@ -134,6 +134,7 @@ microsimulation-model/
 CMake (version 3.16+)
 C++ Compiler (GCC, Clang, or MSVC)
 Google Test (for unit testing)
+Python (visualization and actionable insights)
 ```
 
 ## ⚙️ Installation
@@ -145,7 +146,7 @@ mkdir build
 cd build
 cmake ..
 make
-install python, PyTorch, dashboard
+install python, numpy, scipy, matplotlib, pandas, PyTorch, dashboard
 python main.py
 ```
 
